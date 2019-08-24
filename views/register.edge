@@ -1,0 +1,26 @@
+@layout('layouts.app')
+
+@section('content')
+@if(errors.length > 0)
+  <ul class="list-group">
+      @each(error as errors)
+        <li class="list-group-item text-danger">{{error}}</li>
+      @endeach
+  </ul>
+@endif
+<form action="/users/register" method="post">
+    <div class="outerlogin">
+           
+                <div class="loginbox">
+                        <center><b>SIGN UP</b></center>
+                        <br>
+                            <input type="text" name="username" id="username" class="form-control input-sm" placeholder="Enter Username">
+                            <br>
+                            <input type="password" name="password" id="password"  class="form-control input-sm" placeholder="Enter Password">
+                            <br>
+                            <center><input type="submit" value="Sign Up" class="btn btn-success"></center>
+                </div>
+            
+    </div>
+</form>
+@endsection

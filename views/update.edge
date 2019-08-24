@@ -1,0 +1,50 @@
+@layout('layouts.app')
+
+@section('content')
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+                <h1>Update Post</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form action="/posts/store/update" method="post" enctype="multipart/form-data">
+                <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label>Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username" class="form-control" value="{{post.username}}">
+                        </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Title</label>
+                        <input type="text" name="title" id="title" placeholder="Title" class="form-control" value="{{post.title}}">
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="file" name="image"  class="form-control-file">
+                </div>
+
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Description</label>
+                        <textarea name="description" id="description" cols="30" rows="10" class="form-control" value="{{post.description}}"></textarea>
+                    </div>
+                </div>
+                <div class="form-group my-4 text-center">
+                    <button class="btn btn-primary">Update Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  
+@endsection

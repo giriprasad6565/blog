@@ -1,0 +1,114 @@
+.topnav{
+    height: 60px;
+    background: orangered;
+    margin: -5px -5px 0 -5px;
+}
+
+li{
+    list-style: none;
+}
+
+#right{
+    float: right;
+    line-height: 3.5;
+    padding: 5px;
+}
+
+.signin{
+    margin-right: 30px;
+    margin-left: 15px;
+    color: black;
+}
+
+.logout{
+        margin-right: 30px;
+        margin-left: 15px;
+        color: black;
+}
+
+.signin a{
+    color: black;
+}
+
+.logout a{
+    color: black;
+}
+
+.signin a:hover{
+    color: white;
+}
+
+.logout a:hover{
+    color: white;
+}
+
+
+.signup a{
+    color: black;
+}
+
+.signup a:hover{
+    color: white;
+}
+
+.topheader{
+    float: left;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 2;
+    margin-left: 80px;
+}
+
+a{
+    /* text-decoration: none; */
+    color: black;
+}
+
+.loginbox{
+    width: 35%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.outerlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.page-heading{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-preview{
+    margin-top: 80px;
+}
+
+.postheader{
+    height: 250px;
+    width: 100%;
+    background-position: center bottom;
+    color: white;
+}
+
+.page-heading h1{
+    margin-top: 50px;
+}
+
+.contentdesc{
+    margin-top: 20px;
+}
+
+.newblog{
+    float: right;
+    margin-top: 20px;
+}
+
+.editpostbtn{
+    margin-right: 15px;
+}

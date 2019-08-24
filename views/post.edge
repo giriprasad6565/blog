@@ -1,0 +1,41 @@
+@layout('layouts.app')
+
+@section('content')
+    
+<header class="postheader" style="background-image: url('{{post.image}}')">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="page-heading">
+                            <h1>{{post.title}}</h1>
+                            <span class="meta">Posted by 
+                            <a href="#">{{post.username}}</a>
+                            on {{post.createdAt.toDateString()}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</header>
+
+<article>
+       <div class="container">
+                <div class="row contentdesc">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        {{post.description}}
+                    </div>
+                </div>
+        </div>  
+</article>
+
+<hr>
+
+<center>
+    @if(auth)
+        <a href="/update/{{post._id}}" class="btn btn-primary editpostbtn">Edit Post</a>
+        <a href="/delete/{{post._id}}" class="btn btn-danger">Delete Post</a>
+    @endif
+    
+</center>
+
+@endsection

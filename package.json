@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Create simple blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giriprasad",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.0.0",
+    "datatables.net-bs4": "^1.10.19",
+    "express": "^4.17.1",
+    "express-edge": "^1.0.0",
+    "express-fileupload": "^1.1.5",
+    "express-session": "^1.16.2",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
+    "mongoose": "^5.6.10",
+    "mysql": "^2.17.1",
+    "startbootstrap-clean-blog": "^5.0.7"
+  }
+}
